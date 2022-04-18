@@ -1,0 +1,14 @@
+execute as @a if score @s rmb_trigger matches 1.. run function mechanics:rmb_holded
+scoreboard players remove @a[scores={action=1..}] action 1
+
+execute as @a if score @s action matches 1..10 run title @s actionbar ["",{"text":"[","bold":true,"color":"gold"},{"text":"|","bold":true,"color":"dark_green"},{"text":"|||||||||","bold":true,"color":"gray"},{"text":"]","bold":true,"color":"gold"}]
+execute as @a if score @s action matches 11..20 run title @s actionbar ["",{"text":"[","bold":true,"color":"gold"},{"text":"||","bold":true,"color":"dark_green"},{"text":"||||||||","bold":true,"color":"gray"},{"text":"]","bold":true,"color":"gold"}]
+execute as @a if score @s action matches 21..30 run title @s actionbar ["",{"text":"[","bold":true,"color":"gold"},{"text":"|||","bold":true,"color":"dark_green"},{"text":"|||||||","bold":true,"color":"gray"},{"text":"]","bold":true,"color":"gold"}]
+execute as @a if score @s action matches 31..40 run title @s actionbar ["",{"text":"[","bold":true,"color":"gold"},{"text":"||||","bold":true,"color":"dark_green"},{"text":"||||||","bold":true,"color":"gray"},{"text":"]","bold":true,"color":"gold"}]
+execute as @a if score @s action matches 41..50 run title @s actionbar ["",{"text":"[","bold":true,"color":"gold"},{"text":"|||||","bold":true,"color":"dark_green"},{"text":"|||||","bold":true,"color":"gray"},{"text":"]","bold":true,"color":"gold"}]
+execute as @a if score @s action matches 51..60 run title @s actionbar ["",{"text":"[","bold":true,"color":"gold"},{"text":"||||||","bold":true,"color":"dark_green"},{"text":"||||","bold":true,"color":"gray"},{"text":"]","bold":true,"color":"gold"}]
+execute as @a if score @s action matches 61..70 run title @s actionbar ["",{"text":"[","bold":true,"color":"gold"},{"text":"|||||||","bold":true,"color":"dark_green"},{"text":"|||","bold":true,"color":"gray"},{"text":"]","bold":true,"color":"gold"}]
+execute as @a if score @s action matches 71..80 run title @s actionbar ["",{"text":"[","bold":true,"color":"gold"},{"text":"||||||||","bold":true,"color":"dark_green"},{"text":"||","bold":true,"color":"gray"},{"text":"]","bold":true,"color":"gold"}]
+execute as @a if score @s action matches 81..90 run title @s actionbar ["",{"text":"[","bold":true,"color":"gold"},{"text":"|||||||||","bold":true,"color":"dark_green"},{"text":"|","bold":true,"color":"gray"},{"text":"]","bold":true,"color":"gold"}]
+execute as @a if score @s action matches 91..110 run title @s actionbar ["",{"text":"[","bold":true,"color":"gold"},{"text":"||||||||||","bold":true,"color":"dark_green"},{"text":"","bold":true,"color":"gray"},{"text":"]","bold":true,"color":"gold"}]
+execute as @a if score @s action matches 100.. run function mechanics:ability_use
